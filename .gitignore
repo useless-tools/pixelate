@@ -1,5 +1,4 @@
-.idea/
-.DS_Store
+/.*
 *.swp
 *.pyc
 __pycache__/
@@ -7,3 +6,6 @@ __pycache__/
 build/
 dist/
 *.egg-info/
+!.gitignore
+!.travis.yml
+
