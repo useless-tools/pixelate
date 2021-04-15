@@ -6,7 +6,7 @@ pixelate
 
 Make your photos even worse. But it's like pixel art.
 
-Works with Python ≥ 3.2.
+Works with Python ≥ 3.2. Use version 0.4 for Python 2.* projects.
 
 Installation
 ------------

@@ -41,9 +41,10 @@ setup(
         'Programming Language :: Python :: 3.9',
     ],
     
-    test_suite="runtests",
     requires=requires,
-    tests_require=requires,
-    setup_requires=requires,
+    tests_require=requires + ["pytest"],
+    setup_requires=requires + ["pytest-runner"],
+    install_requires=requires,
+    
     scripts=['bin/pixelate'],
 )
