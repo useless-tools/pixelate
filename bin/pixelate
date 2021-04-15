@@ -1,16 +1,20 @@
 #!/usr/bin/env python
 
 import argparse
-from pixelate.pixelate import pixelate
+from pixelate import pixelate
+
 
 parser = argparse.ArgumentParser(
-    description='Make your photos worse. But it looks like pixel art.'
+    description="Make your photos even worse. But it's like pixel art."
 )
 parser.add_argument(
-    '--input', type=str, help='path to input image', required=True
+    '--input',
+    type=str,
+    help='the path to the source image file to be processed',
+    required=True
 )
 parser.add_argument(
-    '--output', type=str, help='path to output image', required=True
+    '--output', type=str, help='the path to the result file', required=True
 )
 parser.add_argument(
     '--pixel-size', type=int, help='pixel size', required=True
@@ -19,3 +23,4 @@ parser.add_argument(
 args = parser.parse_args()
 
 pixelate(args.input, args.output, args.pixel_size)
+
