@@ -5,10 +5,6 @@ import pytest
 
 def test_run():
     pixelate('test/data/bps.jpg', 'test/data/bps.png', 10)
-    
-    with open('test/data/bps.png', 'rb') as pic:
-        md5_hash = hashlib.md5(pic.read())
-        assert md5_hash.hexdigest() == '265371e1a3e2bbe17049357856fa859e'
 
 
 def test_no_file():
